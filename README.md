@@ -30,3 +30,4 @@
 + [二叉搜索树的后序遍历序列](https://github.com/gx-white/Coder/tree/master/%E5%89%91%E6%8C%87Offer/VerifySquenceOfBST)
 + [二叉树中和为某一值的路径](https://github.com/gx-white/Coder/tree/master/%E5%89%91%E6%8C%87Offer/FindPath)
 + [复杂链表的复制](https://github.com/gx-white/Coder/tree/master/%E5%89%91%E6%8C%87Offer/Clone)
++ [二叉搜索树与双向链表](https://github.com/gx-white/Coder/tree/master/%E5%89%91%E6%8C%87Offer/Convert)
