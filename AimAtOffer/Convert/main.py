@@ -4,6 +4,7 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
+'''
 class Solution:
     def __init__(self):
         self.left_flag = False
@@ -44,6 +45,30 @@ class Solution:
                 pRootOfTree.right = head_temp
                 head_temp.left = pRootOfTree
         return head, tail
+'''
+# 中序遍历多加了一个pre
+class Solution:
+    def __init__(self):
+        self.pre = None
+    def Convert(self, pRootOfTree):
+        # write code here
+        if(pRootOfTree == None):
+            return None
+        self.digui(pRootOfTree)
+        while(self.pre.left):
+            self.pre = self.pre.left
+        return self.pre
+
+    def digui(self, pRootOfTree):
+        if(pRootOfTree == None):
+            return 
+        self.digui(pRootOfTree.left)
+        pRootOfTree.left = self.pre
+        if(self.pre):
+            self.pre.right = pRootOfTree
+        self.pre = pRootOfTree
+
+        self.digui(pRootOfTree.right)
 
 if __name__ == "__main__":
     n1 = TreeNode(12)
