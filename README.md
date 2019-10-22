@@ -32,3 +32,4 @@
 + [复杂链表的复制](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Clone)
 + [二叉搜索树与双向链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Convert)
 + [字符串的排列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Permutation)
++ [最小的k个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetLeastNumbers)
