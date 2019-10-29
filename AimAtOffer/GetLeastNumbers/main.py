@@ -33,6 +33,7 @@ class Solution:
         self.QuickSort(tinput, start, i-1)
         self.QuickSort(tinput, i+1, end)
 '''
+'''
 class Solution:
     def GetLeastNumbers_Solution(self, tinput, k):
         # write code here
@@ -53,7 +54,46 @@ class Solution:
             if(i+1 >= k):
                 break
         return tinput[0:k]
+'''
+class Solution:
+    def GetLeastNumbers_Solution(self, tinput, k):
+        # write code here
+        length = len(tinput)
+        if(length == 0):
+            return []
+        if(k > length):
+            return []
+        self.QuickSort(tinput,0, length-1, k)
+        a = tinput[0:k]
+        a.sort()
+        return a
+        
+    
+    def QuickSort(self, tinput, start, end, k):
+        if(start >= end):
+            return
+        i = start
+        j = end
+        temp = tinput[start]
+        while(i != j):
+            while((tinput[j] >= temp) & (i < j)):
+                j -= 1
+            if(i < j):
+                tinput[i] = tinput[j]
+                i += 1
+            while((tinput[i] < temp) & (i < j)):
+                i += 1
+            if(i < j):
+                tinput[j] = tinput[i]
+                j -= 1
+        tinput[i] = temp
+        if(i > k-1):
+            self.QuickSort(tinput, start, i-1, k)
+        elif(i < k-1):
+            self.QuickSort(tinput, i+1, end, k)
+        else:
+            return
 
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.GetLeastNumbers_Solution([4,5,1,6,2,7,3,8], 7))
+    print(sol.GetLeastNumbers_Solution([4,5,1,6,2,7,3,8], 5))
