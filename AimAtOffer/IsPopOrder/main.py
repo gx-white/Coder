@@ -18,7 +18,7 @@ class Solution:
                 else:
                     self.x.append(pushV[0])
                     pushV.pop(0)
-        if(self.x == popV[::-1]):
+        if(self.x == popV[::-1]):   # 判断剩下的部分是不是按照先入后出的顺序pop的
             return True
         else:
             return False

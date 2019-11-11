@@ -5,6 +5,7 @@ class TreeNode:
         self.left = None
         self.right = None
 '''
+# 这种写法不够直观，所以采用下面的方式，更直白一点，实际上是一样的
 class Solution:
     def HasSubtree(self, pRoot1, pRoot2):
         # write code here
