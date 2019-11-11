@@ -13,6 +13,7 @@ class Solution:
                 arr_even.append(each)
         return arr_odd + arr_even
 '''
+'''
 class Solution:
     def reOrderArray(self, array):
         # write code here
@@ -45,8 +46,28 @@ class Solution:
             self.digui(array, length-1)
         
         return array
+'''
+class Solution:
+    def reOrderArray(self, array):
+        # write code here
+        if not array:
+            return array
+        length = len(array)
+        if(length == 1):
+            return array
 
+        flag = 1
+        while(flag):
+            i = 0
+            flag = 0
+            for i in range(1, length):
+                if((array[i] & 1) & (array[i-1] & 1 == 0)):  # 前偶后奇
+                    temp = array[i]
+                    array[i] = array[i-1]
+                    array[i-1] = temp
+                    flag = 1
+        return array
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.reOrderArray([1]))
+    print(sol.reOrderArray([2,1]))
 

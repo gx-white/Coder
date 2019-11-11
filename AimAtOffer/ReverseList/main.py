@@ -3,6 +3,7 @@ class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+'''
 class Solution:
     # 返回ListNode
     def ReverseList(self, pHead):
@@ -35,6 +36,34 @@ class Solution:
             if(tHead2.next.next == None):
                 break
         return tHead2.next
+'''
+class Solution:
+    # 返回ListNode
+    def ReverseList(self, pHead):
+        # write code here
+        if(not pHead):
+            return pHead
+        if(pHead.next == None):
+            return pHead
+        if(pHead == None):
+            return pHead
+        
+        preNode = ListNode(0)
+        postNode = ListNode(0)
+
+        preNode = pHead
+        pHead = pHead.next
+        preNode.next = None
+        postNode = pHead.next
+
+        while(pHead):
+            pHead.next = preNode
+            preNode = pHead
+            pHead = postNode
+            try:
+                postNode = pHead.next
+            except:
+                return preNode
 
 if __name__ == "__main__":
     node1 = ListNode(1)
@@ -49,7 +78,7 @@ if __name__ == "__main__":
     node4.next = node5
 
     sol = Solution()
-    node = sol.ReverseList(1)
+    node = sol.ReverseList(node1)
     while(node):
         print(node.val)
         node = node.next
