@@ -44,6 +44,7 @@ class Solution:
         head.next = self.digui(pHead.next)
         return head
 '''
+'''
 # 反而耗时长
 class Solution:
     #RandomListNode
@@ -80,6 +81,39 @@ class Solution:
         head = RandomListNode(pHead.label)
         head.next = self.digui(pHead.next)
         return head
+'''
+class Solution:
+    #RandomListNode
+    def Clone(self, pHead):
+        # write code here
+        if(pHead == None):
+            return None
+        head = pHead
+        # 完成将新节点插到老节点后面
+        while(pHead):
+            copy = RandomListNode(pHead.label)
+            copy.next = pHead.next
+            pHead.next = copy
+            pHead = copy.next
+        ###
+        pHead = head
+        while(pHead):
+            if(pHead.random != None):
+                pHead.next.random = pHead.random.next
+            pHead = pHead.next.next
+        
+        pHead = head
+        copy = pHead.next
+        copy_head = copy
+        while(copy.next):
+            pHead.next = copy.next
+            copy.next = pHead.next.next
+            pHead = pHead.next
+            copy = pHead.next
+        pHead.next = None
+        return copy_head
+        
+
 
 if __name__ == "__main__":
     n1 = RandomListNode(1)
@@ -89,10 +123,10 @@ if __name__ == "__main__":
     n5 = RandomListNode(5)
 
     n1.next = n2
+    n1.random = n3
     n2.next = n3
     n2.random = n5
     n3.next = n4
-    n3.random = n3
     n4.next = n5
     n4.random = n2
 
