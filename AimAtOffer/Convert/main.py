@@ -55,8 +55,10 @@ class Solution:
         if(pRootOfTree == None):
             return None
         self.digui(pRootOfTree)
+        # 回到链表头（最左端）
         while(self.pre.left):
             self.pre = self.pre.left
+        ####
         return self.pre
 
     def digui(self, pRootOfTree):
