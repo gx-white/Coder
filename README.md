@@ -34,3 +34,5 @@
 + [字符串的排列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Permutation)
 + [数组中出现次数超过一半的数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/MoreThanHalfNum)
 + [最小的k个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetLeastNumbers)
++ [连续子数组的最大和](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindGreatestSumOfSubArray)
++ [整数中1出现的个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/NumberOf1Between1AndN)
