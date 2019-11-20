@@ -15,18 +15,21 @@ class Solution:
 class Solution:
     def NumberOf1Between1AndN_Solution(self, n):
         # write code here
-        ## 求位数
-        number = 1
-        temp = n / 10
-        while(temp):
-            temp = temp / 10
-            number += 1
-        ## 
         count = 0
-        for i in range(1, number+1):
-
+        base = 10
+        temp = n
+        while(temp):
+            num = temp % 10
+            temp = n / base
+            if(num > 1):   # 可以改成对应要计算的数字
+                count += (temp + 1) * base / 10
+            elif(num < 1):
+                count += temp * base / 10
+            else:
+                count += temp * base / 10 + n % (base / 10) + 1
+            base *= 10
         return count
 
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.NumberOf1Between1AndN_Solution(1))
+    print(sol.NumberOf1Between1AndN_Solution(2134))

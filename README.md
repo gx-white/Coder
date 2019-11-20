@@ -36,3 +36,6 @@
 + [最小的k个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetLeastNumbers)
 + [连续子数组的最大和](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindGreatestSumOfSubArray)
 + [整数中1出现的个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/NumberOf1Between1AndN)
++ [把数组排成最小的数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/PrintMinNumber)
++ [丑数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetUglyNumber)
++ [第一个只出现一次的字符位置](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstNotRepeatingChar)
