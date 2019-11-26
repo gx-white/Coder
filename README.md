@@ -39,3 +39,8 @@
 + [把数组排成最小的数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/PrintMinNumber)
 + [丑数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetUglyNumber)
 + [第一个只出现一次的字符位置](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstNotRepeatingChar)
++ [数组中的逆序对](https://github.com/gx-white/Coder/tree/master/AimAtOffer/InversePairs)
++ [两个链表的第一个公共节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindFirstCommonNode)
++ [数字在排序数组中出现的次数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetNumberOfK)
++ [二叉树的深度](https://github.com/gx-white/Coder/tree/master/AimAtOffer/TreeDepth)
++ [平衡二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/IsBalanced)
