@@ -44,3 +44,13 @@
 + [数字在排序数组中出现的次数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetNumberOfK)
 + [二叉树的深度](https://github.com/gx-white/Coder/tree/master/AimAtOffer/TreeDepth)
 + [平衡二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/IsBalanced)
++ [数组中只出现一次的数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindNumsAppearOnce)
++ [和为S的连续正数序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindContinuousSequence)
++ [和为S的两个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindNumbersWithSum)
++ [左旋转字符串](https://github.com/gx-white/Coder/tree/master/AimAtOffer/LeftRotateString)
++ [翻转单词顺序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/ReverseSentence)
+
+
+### 分类
+
+[TODO]按照考点来分类一下。
