@@ -49,6 +49,10 @@
 + [和为S的两个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindNumbersWithSum)
 + [左旋转字符串](https://github.com/gx-white/Coder/tree/master/AimAtOffer/LeftRotateString)
 + [翻转单词顺序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/ReverseSentence)
++ [扑克牌顺子](https://github.com/gx-white/Coder/tree/master/AimAtOffer/IsContinuous)
++ [孩子们的游戏(圆圈中最后剩下的数)](https://github.com/gx-white/Coder/tree/master/AimAtOffer/LastRemaining)
++ [求1+2+3+...+n](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Sum)
++ [不用加减乘除做加法](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Add)
 
 
 ### 分类
