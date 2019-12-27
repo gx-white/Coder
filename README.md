@@ -53,6 +53,9 @@
 + [孩子们的游戏(圆圈中最后剩下的数)](https://github.com/gx-white/Coder/tree/master/AimAtOffer/LastRemaining)
 + [求1+2+3+...+n](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Sum)
 + [不用加减乘除做加法](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Add)
++ [把字符串转换成整数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/StrToInt)
++ [数组中重复的数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/duplicate)
++ [构建乘积数组](https://github.com/gx-white/Coder/tree/master/AimAtOffer/multiply)
 
 
 ### 分类
