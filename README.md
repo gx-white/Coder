@@ -56,6 +56,22 @@
 + [把字符串转换成整数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/StrToInt)
 + [数组中重复的数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/duplicate)
 + [构建乘积数组](https://github.com/gx-white/Coder/tree/master/AimAtOffer/multiply)
++ [正则表达式匹配](https://github.com/gx-white/Coder/tree/master/AimAtOffer/match)
++ [表示数值的字符串](https://github.com/gx-white/Coder/tree/master/AimAtOffer/isNumeric)
++ [字符流中第一个不重复的字符](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstAppearingOnce)
++ [链表中环的入口节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/EntryNodeOfLoop)
++ [删除链表中重复的节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/deleteDuplication)
++ [二叉树的下一个节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetNext)
++ [对称的二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/isSymmetrical)
++ [按之字形顺序打印二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Print)
++ [把二叉树打印成多行](https://github.com/gx-white/Coder/tree/master/AimAtOffer/MutilPrint)
++ [序列化二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Serialize)
++ [二叉搜索树的第k个结点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/KthNode)
++ [数据流中的中位数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetMedian)
++ [滑动窗口的最大值](https://github.com/gx-white/Coder/tree/master/AimAtOffer/maxInWindows)
++ [矩阵中的路径](https://github.com/gx-white/Coder/tree/master/AimAtOffer/hasPath)
++ [机器人的运动范围](https://github.com/gx-white/Coder/tree/master/AimAtOffer/movingCount)
++ [剪绳子](https://github.com/gx-white/Coder/tree/master/AimAtOffer/cutRope)
 
 
 ### 分类
