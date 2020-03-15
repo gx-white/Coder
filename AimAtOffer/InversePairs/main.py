@@ -5,8 +5,44 @@ class Solution:
 
     def InversePairs(self, data):
         # write code here
-        self.mergeSort(data)
+        self.mergeSortBottomToTop(data)
         return self.count
+    # 换成 迭代写法 的归并排序就过了，虽然耗时还是很久
+    def mergeSortBottomToTop(self, arr):
+        length = len(arr)
+        b = []
+        a = arr
+        seg = 1
+        while(1):
+            # for seg in range(1, length):
+            for start in range(0, length, seg+seg):
+                low = start
+                mid = min(start+seg, length)
+                high = min(start+seg+seg, length)
+
+                start1, end1, start2, end2 = low, mid, mid, high
+                while(start1 < end1) & (start2 < end2):
+                    if(a[start1] <= a[start2]):
+                        b.append(a[start1])
+                        start1 += 1
+                    else:
+                        b.append(a[start2])
+                        start2 += 1
+                        self.count += end1 - start1
+                        self.count %= 1000000007  
+                while(start1 < end1):
+                    b.append(a[start1])
+                    start1 += 1
+                while(start2 < end2):
+                    b.append(a[start2])
+                    start2 += 1
+            a, b = b, []
+            seg += seg
+            if(seg >= length):
+                break
+        return a
+    
+    # 超时 75%
     def mergeSort(self, data):
         length = len(data)
         if(length < 2):
@@ -30,7 +66,7 @@ class Solution:
         while(right):
             result.append(right.pop(0))
         return result
-
+    
 '''
 # 写一下归并排序的代码，便于之后理解这个题目的解法
 class Solution:
