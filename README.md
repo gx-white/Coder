@@ -82,7 +82,7 @@
 
 ![image](Arrange/sort.png)
 
-这里就选我觉得最常见的6种方式整理一下。代表全部列在[排序](https://github.com/gx-white/Coder/tree/master/Arrange/sort.py)
+这里就选我觉得最常见的6种方式整理一下。代码全部列在[排序](https://github.com/gx-white/Coder/tree/master/Arrange/sort.py)
 1. 选择排序
 2. 冒泡排序
 3. 插入排序
@@ -102,6 +102,34 @@
 
 #### 遍历方式
 
+代码全部列在[二叉树遍历](https://github.com/gx-white/Coder/tree/master/Arrange/treeTraverse.py)。只写了递归的方式，迭代方式遇到需要的话再说吧。
+（先、中、后均是指**根节点**的遍历顺序）
+1. 先序遍历
+2. 中序遍历
+    + [二叉搜索树与双向链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Convert) (在中序遍历基础上做)
+3. 后序遍历 
+    + [二叉搜索树的后序遍历序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/VerifySquenceOfBST) (判断一个序列是否为后序遍历)
+4. 层次遍历
+    + 按行打印
+    + 直接打印
+    + [把二叉树打印成多行](https://github.com/gx-white/Coder/tree/master/AimAtOffer/MutilPrint)  （按行打印）
+    + [按之字形顺序打印二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Print)   （按行打印）
+    + [从上往下打印二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/PrintFromTopToBottom)  (直接打印)
+    + [二叉树的深度](https://github.com/gx-white/Coder/tree/master/AimAtOffer/TreeDepth)  (利用层次遍历得到二叉树的深度)
+
 #### 复原
 
+代码全部列在[二叉树重建](https://github.com/gx-white/Coder/tree/master/Arrange/treereConstruct.py)。
+1. 已知先序和中序
+    + [重建二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/reConstructBinaryTree)
+2. 已知中序和后序
+3. 已知先序和后序(不一定是唯一的)
+    引申出的问题有：
+    + 给出先序和后序如何判断重构二叉树是否唯一
+    + 可以重构多少个二叉树
+
 #### 序列化与反序列化
+
++ [序列化二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Serialize)
+
+### 链表相关的操作
