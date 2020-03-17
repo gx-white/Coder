@@ -1,10 +1,7 @@
 # Coder
 算法题目练习
 
-## 类别
-[牛客网剑指Offer](###牛客网剑指Offer)
-
-### 牛客网剑指Offer
+## 牛客网剑指Offer
 + [二维数组中的查找](https://github.com/gx-white/Coder/tree/master/AimAtOffer/searchIn2DArray)
 + [替换空格](https://github.com/gx-white/Coder/tree/master/AimAtOffer/replaceSpace)
 + [从尾到头打印链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/printListFromTailToHead)
@@ -74,22 +71,37 @@
 + [剪绳子](https://github.com/gx-white/Coder/tree/master/AimAtOffer/cutRope)
 
 
-### 分类
+## 考点
 
 [TODO]按照考点来分类一下。
-#### 排序算法
+### 排序算法
 
-##### 经典算法
+#### 经典算法
 
 参考菜鸟网站总结的十大经典排序算法。
 
 ![image](Arrange/sort.png)
 
+这里就选我觉得最常见的6种方式整理一下。代表全部列在[排序](https://github.com/gx-white/Coder/tree/master/Arrange/sort.py)
 1. 选择排序
 2. 冒泡排序
 3. 插入排序
-3. 归并排序（分而治之）
+4. 归并排序（分而治之）
     + 自顶向下 (递归)
     + 自底向上 (迭代)
-    + [数组中的逆序对](https://github.com/gx-white/Coder/tree/master/AimAtOffer/InversePairs)这个题目就是一个**归并排序的应用**，自底向上效率更高一点。`python`方法写这个题目，用递归方式会超时，只能通过`75%`的数据，改为迭代写法之后就可以通过了，虽然耗时还是很多。
-4. 选择排序
+    + [数组中的逆序对](https://github.com/gx-white/Coder/tree/master/AimAtOffer/InversePairs) 这个题目就是一个**归并排序的应用**，自底向上效率更高一点。`python`方法写这个题目，用递归方式会超时，只能通过`75%`的数据，改为迭代写法之后就可以通过了，虽然耗时还是很多。
+5. 快速排序
+    + 涉及到在题目中经常见到的`partition`[分区]操作
+    + [数组中出现次数超过一半的数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/MoreThanHalfNum) 
+    + [最小的k个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetLeastNumbers) 
+6. 堆排序
+    + [数据流中的中位数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetMedian) 这个题目涉及到使用最大堆/最小堆来解决问题
+    + [最小的k个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetLeastNumbers) 也可以用堆排序来解决
+
+### 二叉树的遍历以及复原
+
+#### 遍历方式
+
+#### 复原
+
+#### 序列化与反序列化
