@@ -107,6 +107,8 @@
 1. 先序遍历
 2. 中序遍历
     + [二叉搜索树与双向链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Convert) (在中序遍历基础上做)
+    + [二叉树的下一个节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetNext)  找出中序遍历的下一个节点
+    + [二叉搜索树的第k个结点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/KthNode)
 3. 后序遍历 
     + [二叉搜索树的后序遍历序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/VerifySquenceOfBST) (判断一个序列是否为后序遍历)
 4. 层次遍历
@@ -132,4 +134,21 @@
 
 + [序列化二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Serialize)
 
+### 二叉树相关的操作
+
+#### 二叉树镜像
+
++ [对称的二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/isSymmetrical)
++ [二叉树的镜像](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Mirror)
+
+#### 平衡二叉树判断
+
++ [平衡二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/IsBalanced)
+
+#### 二叉树路径和
+
++ [二叉树中和为某一值的路径](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindPath)
+
 ### 链表相关的操作
+
+### 常考的算法题目
