@@ -138,8 +138,8 @@
 
 #### 二叉树镜像
 
-+ [对称的二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/isSymmetrical)
 + [二叉树的镜像](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Mirror)
++ [对称的二叉树](https://github.com/gx-white/Coder/tree/master/AimAtOffer/isSymmetrical)
 
 #### 平衡二叉树判断
 
@@ -151,4 +151,18 @@
 
 ### 链表相关的操作
 
++ [从尾到头打印链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/printListFromTailToHead) **栈** 从尾到头！
++ [链表中倒数第k个结点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindKthToTail)  快慢指针的方法
++ [反转链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/ReverseList)  新建两个节点，分别标记当前节点的上一个节点和下一个节点
++ [合并两个排序的链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Merge)
++ [删除链表中重复的节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/deleteDuplication)  **之后再看一下**
+
+#### 链表有环
+
++ [两个链表的第一个公共节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindFirstCommonNode)
++ [链表中环的入口节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/EntryNodeOfLoop)
+
 ### 常考的算法题目
+
++ [数组中的逆序对](https://github.com/gx-white/Coder/tree/master/AimAtOffer/InversePairs) 这个在归并排序那里也列过了，感觉面试里面经常会被问到
++ 

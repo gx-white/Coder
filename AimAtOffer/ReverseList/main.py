@@ -37,6 +37,7 @@ class Solution:
                 break
         return tHead2.next
 '''
+'''
 class Solution:
     # 返回ListNode
     def ReverseList(self, pHead):
@@ -64,7 +65,31 @@ class Solution:
                 postNode = pHead.next
             except:
                 return preNode
+'''
+class Solution:
+    # 返回ListNode
+    def ReverseList(self, pHead):
+        # write code here
+        if(pHead.next == None):
+            return pHead
+        if(pHead == None):
+            return pHead
+        
+        preNode = ListNode(0)
+        postNode = ListNode(0)
 
+        preNode = pHead
+        pHead = pHead.next
+        preNode.next = None
+        postNode = pHead.next
+        
+        while(postNode):
+            pHead.next = preNode
+            preNode = pHead
+            pHead = postNode
+            postNode = pHead.next
+        pHead.next = preNode
+        return pHead
 if __name__ == "__main__":
     node1 = ListNode(1)
     node2 = ListNode(2)
