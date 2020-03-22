@@ -155,12 +155,12 @@
 + [链表中倒数第k个结点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindKthToTail)  快慢指针的方法
 + [反转链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/ReverseList)  新建两个节点，分别标记当前节点的上一个节点和下一个节点
 + [合并两个排序的链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Merge)
-+ [删除链表中重复的节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/deleteDuplication)  **之后再看一下**
++ [删除链表中重复的节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/deleteDuplication)  设置pre，current指针， pre指针指向当前确定不重复的那个节点，而current指针相当于工作指针，一直往后面搜索。
 
 #### 链表有环
 
-+ [两个链表的第一个公共节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindFirstCommonNode)
-+ [链表中环的入口节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/EntryNodeOfLoop)
++ [两个链表的第一个公共节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindFirstCommonNode)  一直同时遍历两个链表，如果遍历结束，就返回头结点继续遍历，直到两个节点相同(本质原理是:找出两个链表的长度，然后让长的先走长度差，再一起走)
++ [链表中环的入口节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/EntryNodeOfLoop) 设置快慢指针，快指针步长2，慢指针步长1，当两个指针相遇时，将快指针值到链表头，之后两个指针均步长1，相遇时即为环入口
 
 ### 常考的算法题目
 

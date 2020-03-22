@@ -73,7 +73,7 @@ if __name__ == "__main__":
     n2 = ListNode(7)
 
     n1.next = n2
-    n2.next = node3
+    n2.next = node2
 
     sol = Solution()
     n = sol.FindFirstCommonNode(node1, n1)
