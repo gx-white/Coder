@@ -164,5 +164,17 @@
 
 ### 常考的算法题目
 
++ 斐波那契数列的系列问题
+    + [斐波那契数列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Fibonacci)  `f(n) = f(n-1) + f(n-2)`  直接循环去做，递归复杂度较高，会重复计算很多`f(n-1)`
+    + [跳台阶](https://github.com/gx-white/Coder/tree/master/AimAtOffer/jumpFloor)  就是斐波那契数列的写法，只是初始值不一样
+    + [变态跳台阶](https://github.com/gx-white/Coder/tree/master/AimAtOffer/jumpFloorII) 与跳台阶的分析方法相同，最终化解之后递推公式为`f(n)=2*f(n-1)`
+    + [矩形覆盖](https://github.com/gx-white/Coder/tree/master/AimAtOffer/rectCover) 仍然和斐波那契数列一样，只是初始值不一样(和跳台阶初始值一样)。分析方法相似。
++ 快速幂
++ 队列/栈的相互实现
+    + [用两个栈实现队列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/achieveListWithTwoStacks)
+    + 用队列实现栈
 + [数组中的逆序对](https://github.com/gx-white/Coder/tree/master/AimAtOffer/InversePairs) 这个在归并排序那里也列过了，感觉面试里面经常会被问到
-+ 
++ [数据流中的中位数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetMedian)
++ [最小的k个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetLeastNumbers)
++ [滑动窗口的最大值](https://github.com/gx-white/Coder/tree/master/AimAtOffer/maxInWindows)
++ [字符流中第一个不重复的字符](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstAppearingOnce)
