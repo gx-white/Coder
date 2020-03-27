@@ -155,7 +155,7 @@
 + [链表中倒数第k个结点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindKthToTail)  快慢指针的方法
 + [反转链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/ReverseList)  新建两个节点，分别标记当前节点的上一个节点和下一个节点
 + [合并两个排序的链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Merge)
-+ [删除链表中重复的节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/deleteDuplication)  设置pre，current指针， pre指针指向当前确定不重复的那个节点，而current指针相当于工作指针，一直往后面搜索。
++ [删除链表中重复的节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/deleteDuplication)  设置pre，current指针， pre指针指向**当前确定不重复**的那个节点，而current指针相当于**工作指针**，一直往后面搜索。
 
 #### 链表有环
 
@@ -171,10 +171,22 @@
     + [矩形覆盖](https://github.com/gx-white/Coder/tree/master/AimAtOffer/rectCover) 仍然和斐波那契数列一样，只是初始值不一样(和跳台阶初始值一样)。分析方法相似。
 + 快速幂
 + 队列/栈的相互实现
-    + [用两个栈实现队列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/achieveListWithTwoStacks)
-    + 用队列实现栈
-+ [数组中的逆序对](https://github.com/gx-white/Coder/tree/master/AimAtOffer/InversePairs) 这个在归并排序那里也列过了，感觉面试里面经常会被问到
-+ [数据流中的中位数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetMedian)
-+ [最小的k个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetLeastNumbers)
+    + [用两个栈实现队列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/achieveListWithTwoStacks) `python`的栈是`list`来实现的。思路就是`stack1`用来执行`push`，`stack2`用来执行`pop`(在`stack2`为空时，要先将`stack1`中元素依次**倒**到`stack2`中，不为空则直接`pop`)
+    + 两个队列实现栈。 思路就是`list1`用来执行`push`，`list2`用来执行`pop`(若`list1`元素个数不为1，则将`list1`除最后一个元素外依次**放**到`list2`，`list1`与`list2`交换后再执行`pop`)。`list2`始终要保持为空列表
++ `dp`/贪婪算法
+    + [剪绳子](https://github.com/gx-white/Coder/tree/master/AimAtOffer/cutRope)
+    + 背包问题
++ 与排序相关
+    + [数组中的逆序对](https://github.com/gx-white/Coder/tree/master/AimAtOffer/InversePairs) 这个在归并排序那里也列过了，感觉面试里面经常会被问到
+    + [最小的k个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetLeastNumbers)
++ [数据流中的中位数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetMedian) 维护一个最大堆一个最小堆，利用`python`的`heapq`库函数直接实现最小堆，取反作为最大堆，添加数据过程中保证两个堆的数量相差不超过1。中位数即为中间两数平均或中间数。
++ 只出现一次
+    + [数组中只出现一次的数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindNumsAppearOnce) (前提数组中除两个数字外其他均出现两次)**两个相同的数异或结果为0**(详细解释:将所有数字异或，得到最终结果即为两个不重复数字异或结果。异或结果从右数第一个1所在位置为`X`，将数组中所有数字按照`X`的值分为两组，分别异或。)
+    + [第一个只出现一次的字符位置](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstNotRepeatingChar) 第一次循环简历`hash`表，累积每个字符出现的次数。第二次循环输出第一个次数为1的字符位置
+    + [字符流中第一个不重复的字符](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstAppearingOnce) 将一个长度为`128`的数组初始化为-1。插入时值为-1，则赋值为当时字符位置；大于-1说明重复出现，赋值为-2；小于-1，说明多次出现不做处理。输出时，遍历数组，寻找大于-1且最小的那个数组值，其索引即为第一个不重复字符的`ASCII`值 **与数组中第一个不重复字符比较** 
+    (两个题其实是一样的，都是通过构建`hash`表，后者的代码稍作修改同样可以通过前者)
+
 + [滑动窗口的最大值](https://github.com/gx-white/Coder/tree/master/AimAtOffer/maxInWindows)
-+ [字符流中第一个不重复的字符](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstAppearingOnce)
++ [和为S的连续正数序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindContinuousSequence)
++ [和为S的两个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindNumbersWithSum)
++ [丑数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetUglyNumber) 质因数只能是固定的2/3/5/..
