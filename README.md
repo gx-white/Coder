@@ -106,7 +106,7 @@
 （先、中、后均是指**根节点**的遍历顺序）
 1. 先序遍历
 2. 中序遍历
-    + [二叉搜索树与双向链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Convert) (在中序遍历基础上做)
+    + [二叉搜索树与双向链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Convert) (在中序遍历基础上添加一个`pre`指针，标志当前链表的最后一个节点)
     + [二叉树的下一个节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetNext)  找出中序遍历的下一个节点
     + [二叉搜索树的第k个结点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/KthNode)
 3. 后序遍历 
@@ -149,6 +149,10 @@
 
 + [二叉树中和为某一值的路径](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindPath)
 
+#### 树的子结构
+
++ [树的子结构](https://github.com/gx-white/Coder/tree/master/AimAtOffer/HasSubtree) 找到一个相等的节点，递归判断之后的节点是否全是一样的。两个递归函数`hasSubtree`/`isSubtree`。
+
 ### 链表相关的操作
 
 + [从尾到头打印链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/printListFromTailToHead) **栈** 从尾到头！
@@ -156,6 +160,7 @@
 + [反转链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/ReverseList)  新建两个节点，分别标记当前节点的上一个节点和下一个节点
 + [合并两个排序的链表](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Merge)
 + [删除链表中重复的节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/deleteDuplication)  设置pre，current指针， pre指针指向**当前确定不重复**的那个节点，而current指针相当于**工作指针**，一直往后面搜索。
++ [复杂链表的复制](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Clone) 分三步:1)复制新节点插入到旧节点后面的位置2)重新遍历整个链表处理随机节点`A1.random = A.random.next`3)拆分新旧两个链表
 
 #### 链表有环
 
@@ -170,9 +175,12 @@
     + [变态跳台阶](https://github.com/gx-white/Coder/tree/master/AimAtOffer/jumpFloorII) 与跳台阶的分析方法相同，最终化解之后递推公式为`f(n)=2*f(n-1)`
     + [矩形覆盖](https://github.com/gx-white/Coder/tree/master/AimAtOffer/rectCover) 仍然和斐波那契数列一样，只是初始值不一样(和跳台阶初始值一样)。分析方法相似。
 + 快速幂
-+ 队列/栈的相互实现
+    + [数值的整数次方](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Power) 指数为偶数，则底数翻倍指数减半；指数为奇数，则结果累乘底数，底数翻倍指数减半
++ 队列/栈
     + [用两个栈实现队列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/achieveListWithTwoStacks) `python`的栈是`list`来实现的。思路就是`stack1`用来执行`push`，`stack2`用来执行`pop`(在`stack2`为空时，要先将`stack1`中元素依次**倒**到`stack2`中，不为空则直接`pop`)
     + 两个队列实现栈。 思路就是`list1`用来执行`push`，`list2`用来执行`pop`(若`list1`元素个数不为1，则将`list1`除最后一个元素外依次**放**到`list2`，`list1`与`list2`交换后再执行`pop`)。`list2`始终要保持为空列表
+    + [包含min函数的栈](https://github.com/gx-white/Coder/tree/master/AimAtOffer/stackContainsMin) 使用`top_index`和`minimize`数组分别存储当前栈顶与对应最小值
+    + [栈的压入、弹出序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/IsPopOrder) 按照压入序列进行压入，压入时要比较压入数据是否与当前弹出序列首个数字的关系(**去验证**，而不是得到所有的弹出序列然后去比较)
 + `dp`/贪婪算法
     + [剪绳子](https://github.com/gx-white/Coder/tree/master/AimAtOffer/cutRope)
     + 背包问题
@@ -183,10 +191,22 @@
 + 只出现一次
     + [数组中只出现一次的数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindNumsAppearOnce) (前提数组中除两个数字外其他均出现两次)**两个相同的数异或结果为0**(详细解释:将所有数字异或，得到最终结果即为两个不重复数字异或结果。异或结果从右数第一个1所在位置为`X`，将数组中所有数字按照`X`的值分为两组，分别异或。)
     + [第一个只出现一次的字符位置](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstNotRepeatingChar) 第一次循环简历`hash`表，累积每个字符出现的次数。第二次循环输出第一个次数为1的字符位置
-    + [字符流中第一个不重复的字符](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstAppearingOnce) 将一个长度为`128`的数组初始化为-1。插入时值为-1，则赋值为当时字符位置；大于-1说明重复出现，赋值为-2；小于-1，说明多次出现不做处理。输出时，遍历数组，寻找大于-1且最小的那个数组值，其索引即为第一个不重复字符的`ASCII`值 **与数组中第一个不重复字符比较** 
+    + [字符流中第一个不重复的字符](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FirstAppearingOnce) 将一个长度为`128`的数组初始化为-1。插入时值为-1，则赋值为当时字符位置；大于-1说明重复出现，赋值为-2；小于-1，说明多次出现不做处理。输出时，遍历数组，寻找大于-1且最小的那个数组值，其索引即为第一个不重复字符的`ASCII`值 **与第一个只出现一次的字符位置比较** 
     (两个题其实是一样的，都是通过构建`hash`表，后者的代码稍作修改同样可以通过前者)
 
-+ [滑动窗口的最大值](https://github.com/gx-white/Coder/tree/master/AimAtOffer/maxInWindows)
-+ [和为S的连续正数序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindContinuousSequence)
-+ [和为S的两个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindNumbersWithSum)
-+ [丑数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetUglyNumber) 质因数只能是固定的2/3/5/..
++ [滑动窗口的最大值](https://github.com/gx-white/Coder/tree/master/AimAtOffer/maxInWindows) 用一个队列来存储可能最大值的**索引值**，并且要检查列表头元素是否过期
++ [和为S的连续正数序列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindContinuousSequence) 维护左右指针，等差数列求和大于`S`左指针右移，小于`S`右指针右移，相等则存下来。之后接着左指针右移，直到左指针大于右指针
++ [和为S的两个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindNumbersWithSum) 维护左右指针，和小于`S`左指针右移，和大于`S`右指针左移，找到的第一对即为乘积最小的一对(相差越大，乘积越小) **与和为S的连续整数序列比较** 两者都是维护左右指针，但是指针移动方向、初始位置有差别 
++ [丑数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetUglyNumber) 质因数只能是固定的2/3/5/..  本质是维护三个队列，每次选取最小的队列头插入
++ [旋转数组的最小数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/minNumberInRotateArray) 二分法。位于递增`low=mid+1`，位于递减`high=mid`，否则`left++`
++ [二进制中1的个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/NumberOf1) `n=n&(n-1)`的妙用，二进制表示中有多少个1，上述语句就可以执行多少次。另外，注意`python`中求负数补码`bin(n & 0xffffffff)`
++ [整数中1出现的个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/NumberOf1Between1AndN)
++ [替换空格](https://github.com/gx-white/Coder/tree/master/AimAtOffer/replaceSpace) 替换空格、翻转字符串应该都是想考不开辟额外空间的做法
++ [调整数组顺序使奇数位于偶数前面](https://github.com/gx-white/Coder/tree/master/AimAtOffer/reOrderArray) 分别找到最右端的奇数/偶数，确定要移位多少，不断循环
++ [字符串的排列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Permutation)
++ [连续子数组的最大和](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindGreatestSumOfSubArray)
++ [把数组排成最小的数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/PrintMinNumber)
++ 有一些技巧的
+    （这一类是我认为有比较巧妙的解决方式，但是又没办法整理成某种方法的）
+    + [二维数组中的查找](https://github.com/gx-white/Coder/tree/master/AimAtOffer/searchIn2DArray) 二维数组满足从左到右/从上到下递增，所以从左下角/右上角开始遍历
+    + [顺时针打印矩阵](https://github.com/gx-white/Coder/tree/master/AimAtOffer/printMatrix) 使用`rowBegin`/`rowEnd`/`colBegin`/`colEnd`四个变量来标记剩余还未遍历的矩阵范围，四个`for`循环，外套一个`while`大循环

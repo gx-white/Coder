@@ -33,6 +33,7 @@ class Solution:
             arr.append(matrix[i][width])
         return arr+self.digui(matrix, width+1, row, line)
 '''
+'''
 class Solution:
     # matrix类型为二维列表，需要返回列表
     def printMatrix(self, matrix):
@@ -69,7 +70,37 @@ class Solution:
         for i in range(bottom-1, top, -1):
             arr.append(matrix[i][left])
         return arr + self.digui(matrix, left+1,right-1,top+1,bottom-1)
+'''
+# 这样更写好理解记忆
+class Solution:
+    # matrix类型为二维列表，需要返回列表
+    def printMatrix(self, matrix):
+        # write code here
+        if(not matrix):
+            return matrix
+        rowEnd = len(matrix) - 1
+        if(rowEnd == 0):
+            return matrix[0]
 
+        colEnd = len(matrix[0]) - 1
+        rowBegin, colBegin = 0, 0
+        result = []
+        while(rowBegin <= rowEnd) & (colBegin <= colEnd):
+            for i in range(colBegin, colEnd+1):
+                result.append(matrix[rowBegin][i])
+            rowBegin += 1
+            for j in range(rowBegin, rowEnd+1):
+                result.append(matrix[j][colEnd])
+            colEnd -= 1
+            if(rowBegin <= rowEnd):
+                for i in range(colEnd, colBegin-1, -1):
+                    result.append(matrix[rowEnd][i])
+            rowEnd -= 1
+            if(colBegin <= colEnd):
+                for j in range(rowEnd, rowBegin-1, -1):
+                    result.append(matrix[j][colBegin])
+            colBegin += 1
+        return result
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.printMatrix([[1],[2],[3],[4],[5]]))
+    print(sol.printMatrix([[1, 2],[3, 4]]))

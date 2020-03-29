@@ -67,7 +67,29 @@ class Solution:
                     array[i-1] = temp
                     flag = 1
         return array
+'''
+# 这样用了partition的思想，但是会改变原本的位置关系
+class Solution:
+    def reOrderArray(self, array):
+        # write code here
+        if not array:
+            return array
+        length = len(array)
+        if(length == 1):
+            return array
+
+        i = 0
+        j = length - 1
+        while(i < j):
+            while(array[i] % 2 == 1) & (i < j):
+                i += 1
+            while(array[j] % 2 == 0) & (i < j):
+                j -= 1
+            if(i < j):
+                array[i], array[j] = array[j], array[i]
+        return array
+'''
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.reOrderArray([2,1]))
+    print(sol.reOrderArray([1,3,5,7,2,4,6]))
 
