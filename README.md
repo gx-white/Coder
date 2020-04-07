@@ -200,7 +200,7 @@
 + [丑数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/GetUglyNumber) 质因数只能是固定的2/3/5/..  本质是维护三个队列，每次选取最小的队列头插入
 + [旋转数组的最小数字](https://github.com/gx-white/Coder/tree/master/AimAtOffer/minNumberInRotateArray) 二分法。位于递增`low=mid+1`，位于递减`high=mid`，否则`left++`
 + [二进制中1的个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/NumberOf1) `n=n&(n-1)`的妙用，二进制表示中有多少个1，上述语句就可以执行多少次。另外，注意`python`中求负数补码`bin(n & 0xffffffff)`
-+ [整数中1出现的个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/NumberOf1Between1AndN)
++ [整数中1出现的个数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/NumberOf1Between1AndN) 存在规律
 + [替换空格](https://github.com/gx-white/Coder/tree/master/AimAtOffer/replaceSpace) 替换空格、翻转字符串应该都是想考不开辟额外空间的做法
 + [调整数组顺序使奇数位于偶数前面](https://github.com/gx-white/Coder/tree/master/AimAtOffer/reOrderArray) 分别找到最右端的奇数/偶数，确定要移位多少，不断循环
 + [字符串的排列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Permutation)
