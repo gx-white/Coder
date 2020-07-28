@@ -66,6 +66,20 @@ class Solution:
             except:
                 return preNode
 '''
+# 递归做法
+'''
+class Solution:
+    # 返回ListNode
+    def ReverseList(self, pHead):
+        # write code here
+        if not pHead or not pHead.next:
+            return pHead
+        NewHead = self.ReverseList(pHead.next)
+        pHead.next.next = pHead
+        pHead.next = None
+        return NewHead
+'''
+# 设置两个指针
 class Solution:
     # 返回ListNode
     def ReverseList(self, pHead):

@@ -15,6 +15,22 @@ class treeTraverse:
         self.preorderTraverse(pRoot.left)
         self.preorderTraverse(pRoot.right)
         return self.result
+    
+    def preorderTraverse_with_stack(self, pRoot):
+        if(pRoot == None):
+            return 
+        stack = []
+        p = pRoot
+        while(len(stack) > 0) or p:
+            while(p):
+                self.result.append(p.val)
+                stack.append(p)
+                p = p.left
+            if(len(stack) > 0):
+                p = stack.pop()
+                p = p.right
+        return self.result
+
     def inorderTraverse(self, pRoot):
         if(pRoot == None):
             return
@@ -22,6 +38,22 @@ class treeTraverse:
         self.result.append(pRoot.val)
         self.inorderTraverse(pRoot.right)
         return self.result
+
+    def inorderTraverse_with_stack(self, pRoot):
+        if(pRoot == None):
+            return
+        stack = []
+        p = pRoot
+        while(len(stack) > 0) or p:
+            while(p):
+                stack.append(p)
+                p = p.left
+            if(len(stack) > 0):
+                p = stack.pop()
+                self.result.append(p.val)
+                p = p.right
+        return self.result
+
     def postorderTraverse(self, pRoot):
         if(pRoot == None):
             return
@@ -29,6 +61,27 @@ class treeTraverse:
         self.postorderTraverse(pRoot.right)
         self.result.append(pRoot.val)
         return self.result
+
+    def postorderTraverse_with_stack(self, pRoot):
+        if(pRoot == None):
+            return 
+        stack = []
+        p = pRoot
+        while(len(stack) > 0) or p:
+            while(p):
+                p.visitRight = False
+                stack.append(p)
+                p = p.left
+            p = stack.pop()
+            if(p.visitRight == False):
+                p.visitRight = True
+                stack.append(p)
+                p = p.right
+            else:
+                self.result.append(p.val)
+                p = None
+        return self.result
+    
     # 用队列去实现
     def levelorderTraverse(self, pRoot):
         if(pRoot == None):
@@ -77,4 +130,5 @@ if __name__ == "__main__":
     n8.left = n9
 
     sol = treeTraverse()
+    print(sol.postorderTraverse_with_stack(n1))
     print(sol.postorderTraverse(n1))

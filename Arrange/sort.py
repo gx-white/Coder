@@ -20,6 +20,8 @@ class Sort:
                 if(arr[j] > arr[j+1]):
                     arr[j+1], arr[j] = arr[j], arr[j+1]
         return arr
+
+    # 前面n个是排好的，然后把第n+1个数插入到n个数中。
     def insertionSort(self, arr):
         length = len(arr)
 

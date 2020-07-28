@@ -165,7 +165,7 @@
 #### 链表有环
 
 + [两个链表的第一个公共节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindFirstCommonNode)  一直同时遍历两个链表，如果遍历结束，就返回头结点继续遍历，直到两个节点相同(本质原理是:找出两个链表的长度，然后让长的先走长度差，再一起走)
-+ [链表中环的入口节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/EntryNodeOfLoop) 设置快慢指针，快指针步长2，慢指针步长1，当两个指针相遇时，将快指针值到链表头，之后两个指针均步长1，相遇时即为环入口
++ [链表中环的入口节点](https://github.com/gx-white/Coder/tree/master/AimAtOffer/EntryNodeOfLoop) 设置快慢指针，快指针步长2，慢指针步长1，当两个指针相遇时，将快指针指到链表头，之后两个指针均步长1，相遇时即为环入口
 
 ### 常考的算法题目
 
@@ -206,6 +206,7 @@
 + [字符串的排列](https://github.com/gx-white/Coder/tree/master/AimAtOffer/Permutation)
 + [连续子数组的最大和](https://github.com/gx-white/Coder/tree/master/AimAtOffer/FindGreatestSumOfSubArray)
 + [把数组排成最小的数](https://github.com/gx-white/Coder/tree/master/AimAtOffer/PrintMinNumber)
++ [两个有序数组中位数/Top K问题] `Leetcode NO.4`两个有序数组中位数的问题可以转换成求两个数组中第`k`小的数的问题，也就是说用`Top K`方式解决中位数。`TOP K`思路是，循环去解决，每次循环的时候做的事情是：比较两个当前数组中坐标为`k/2-1`的数字大小关系，小的那个以及它前面的数字全部排除，不可能是最小的`k`个，然后`k`更新为`k`减去排除的个数。
 + 有一些技巧的
     （这一类是我认为有比较巧妙的解决方式，但是又没办法整理成某种方法的）
     + [二维数组中的查找](https://github.com/gx-white/Coder/tree/master/AimAtOffer/searchIn2DArray) 二维数组满足从左到右/从上到下递增，所以从左下角/右上角开始遍历
